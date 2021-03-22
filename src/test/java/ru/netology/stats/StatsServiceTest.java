@@ -14,7 +14,7 @@ class StatsServiceTest {
         @CsvSource(value = {
 
                         "'registered user, salesAmount', 180", 
-                        "'registered user, salesAmount', 15"}, delimiter = ',')
+                        }, delimiter = ',')
         void salesAmount(String test, long expected) {
                 StatsService service = new StatsService();
                 int actual = service.salesAmount(inputValues);
@@ -27,7 +27,7 @@ class StatsServiceTest {
         @CsvSource(value = {
 
                         "'registered user, averageSalesAmount', 15",
-                         "'registered user, averageSalesAmount', 7" }, delimiter = ',')
+                          }, delimiter = ',')
         void averageSalesAmount(String test, long expected) {
                 StatsService service = new StatsService();
                 // long expected = 15;
@@ -40,7 +40,7 @@ class StatsServiceTest {
         @CsvSource(value = {
 
                         "'registered user, picMonthNumber', 7", 
-                        "'registered user, picMonthNumber', 8"}, delimiter = ',')
+                       }, delimiter = ',')
         void picMonthNumber(String test, long expected) {
                 StatsService service = new StatsService();
                 // long expected = 7;
@@ -53,7 +53,7 @@ class StatsServiceTest {
         @CsvSource(value = {
 
                         "'registered user, minMonthNumber', 8", 
-                        "'registered user, minMonthNumber', 7"}, delimiter = ',')
+                        }, delimiter = ',')
         void minMonthNumber(String test, long expected) {
                 StatsService service = new StatsService();
                 // long expected = 8;
@@ -66,7 +66,7 @@ class StatsServiceTest {
         @CsvSource(value = {
 
                         "'registered user, ofMonthsBelowAverage', 5",
-                        "'registered user, ofMonthsBelowAverage', 6" }, delimiter = ',')
+                         }, delimiter = ',')
         void ofMonthsBelowAverage(String test, long expected) {
                 StatsService service = new StatsService();
                 // long expected = 5;
@@ -79,7 +79,7 @@ class StatsServiceTest {
         @CsvSource(value = {
 
                         "'registered user, ofMonthsAboveAverage', 5",
-                        "'registered user, ofMonthsAboveAverage', 6" }, delimiter = ',')
+                         }, delimiter = ',')
         void ofMonthsAboveAverage(String test, long expected) {
                 StatsService service = new StatsService();
                 // long expected = 5;
